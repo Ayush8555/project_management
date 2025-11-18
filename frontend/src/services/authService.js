@@ -3,7 +3,7 @@ import axios from "axios";
 // Register user
 const register = async (userData) => {
   const response = await axios.post(
-    `${import.meta.env.VITE_API_URL}/register`,
+    `${process.env.REACT_APP_API_URL}/register`,
     userData
   );
 
@@ -17,7 +17,7 @@ const register = async (userData) => {
 // Login user
 const login = async (userData) => {
   const response = await axios.post(
-    `${import.meta.env.VITE_API_URL}/login`,
+    `${process.env.REACT_APP_API_URL}/login`,
     userData
   );
 
