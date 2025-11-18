@@ -10,7 +10,10 @@ const getProfile = async (token) => {
     },
   };
 
-  const response = await axios.get(`${API_URL}/profile`, config);
+  const response = await axios.get(
+    `${import.meta.env.VITE_API_URL}/profile`,
+    config
+  );
   return response.data;
 };
 
