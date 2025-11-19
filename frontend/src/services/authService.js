@@ -3,7 +3,7 @@ import axios from "axios";
 // Register user
 const register = async (userData) => {
   const response = await axios.post(
-    `${process.env.REACT_APP_API_URL}/register`,
+    `${process.env.REACT_APP_API_URL}/api/auth/register`,
     userData
   );
 
@@ -17,7 +17,7 @@ const register = async (userData) => {
 // Login user
 const login = async (userData) => {
   const response = await axios.post(
-    `${process.env.REACT_APP_API_URL}/login`,
+    `${process.env.REACT_APP_API_URL}/api/auth/login`,
     userData
   );
 

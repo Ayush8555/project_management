@@ -33,6 +33,7 @@ class User {
       const result = await pool.query(query, [email]);
       return result.rows[0];
     } catch (error) {
+        
       console.error("Error finding user by email:", error.message);
       throw error;
     }

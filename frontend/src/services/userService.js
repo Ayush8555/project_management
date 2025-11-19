@@ -11,7 +11,7 @@ const getProfile = async (token) => {
   };
 
   const response = await axios.get(
-    `${process.env.REACT_APP_API_URL}/profile`,
+    `${process.env.REACT_APP_API_URL}/api/users/profile`,
     config
   );
   return response.data;
