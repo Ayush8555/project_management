@@ -50,24 +50,7 @@ const Home = () => {
           </Link>
         </div>
 
-        <div className="auth-footer">
-          <h3>Features</h3>
-          <ul style={{ textAlign: "left", paddingLeft: "1.5rem" }}>
-            <li style={{ marginBottom: "0.5rem" }}>
-              🔒 Secure JWT-based authentication
-            </li>
-            <li style={{ marginBottom: "0.5rem" }}>
-              🐘 PostgreSQL database integration
-            </li>
-            <li style={{ marginBottom: "0.5rem" }}>
-              🔐 Password encryption with bcrypt
-            </li>
-            <li style={{ marginBottom: "0.5rem" }}>
-              📱 Responsive React frontend
-            </li>
-            <li>🖥️ Express.js backend API</li>
-          </ul>
-        </div>
+        
       </div>
     </div>
   );

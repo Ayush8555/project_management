@@ -71,38 +71,9 @@ const Dashboard = () => {
 
       {error && <div className="auth-error">{error}</div>}
 
-      <div className="profile-card">
-        <h2 className="profile-title">User Profile</h2>
-        {profile ? (
-          <div className="profile-info">
-            <div className="profile-item">
-              <span className="profile-label">Name</span>
-              <span className="profile-value">{profile.name}</span>
-            </div>
-            <div className="profile-item">
-              <span className="profile-label">Email</span>
-              <span className="profile-value">{profile.email}</span>
-            </div>
-            <div className="profile-item">
-              <span className="profile-label">User ID</span>
-              <span className="profile-value">{profile.id}</span>
-            </div>
-          </div>
-        ) : (
-          <p>No profile data available.</p>
-        )}
-      </div>
 
-      <div className="dashboard-content">
-        <h2 className="dashboard-content-title">Protected Content</h2>
-        <p className="dashboard-content-text">
-          This is protected content that only authenticated users can see.
-        </p>
-        <p className="dashboard-content-text">
-          You're successfully logged in and can access this dashboard because
-          you've been authenticated.
-        </p>
-      </div>
+
+     
     </div>
   );
 };
